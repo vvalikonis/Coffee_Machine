@@ -1,0 +1,21 @@
+
+N	java:S106:"9Replace this use of System.out or System.err by a logger.(‘ÀºÚ
+N	java:S106W"9Replace this use of System.out or System.err by a logger.(Êûƒ®
+<	java:S131X""Add a default case to this switch.(åæ¼ƒþÿÿÿÿ
+<	java:S131""Add a default case to this switch.(ÛÓ«­úÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ŠïýÔ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(½èÂï
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‹ºÅ™ùÿÿÿÿ
+S	java:S106O"9Replace this use of System.out or System.err by a logger.(µÉþÐÿÿÿÿÿ
+S	java:S106N"9Replace this use of System.out or System.err by a logger.(õÙÕºúÿÿÿÿ
+N	java:S106C"9Replace this use of System.out or System.err by a logger.(íÇ¾é
+S	java:S106="9Replace this use of System.out or System.err by a logger.(…¼Ñíøÿÿÿÿ
+S	java:S106R"9Replace this use of System.out or System.err by a logger.(äÈÒ—ýÿÿÿÿ
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(ˆÏÇÞýÿÿÿÿ
+S	java:S106M"9Replace this use of System.out or System.err by a logger.(¤¹é€úÿÿÿÿ
+‰
+java:S1192"nDefine a constant instead of duplicating this literal "I have enough resources, making you a coffee!" 3 times.(ˆÏÇÞýÿÿÿÿ
+S	java:S106P"9Replace this use of System.out or System.err by a logger.(ÎåÌùÿÿÿÿ
+N	java:S106H"9Replace this use of System.out or System.err by a logger.(óÖˆ­
+N	java:S106@"9Replace this use of System.out or System.err by a logger.(Ž×Ê¤
+S	java:S106Q"9Replace this use of System.out or System.err by a logger.(Š¿ßóÿÿÿÿÿ

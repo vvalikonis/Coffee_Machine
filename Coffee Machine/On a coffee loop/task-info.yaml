@@ -271,6 +271,107 @@ files:
         }
     }
   learner_created: false
+- name: src/machine/CoffeeMachine.java
+  visible: true
+  text: |
+    package machine;
+
+    import java.util.Scanner;
+
+    public class CoffeeMachine {
+        public static void main(String[] args) {
+
+            Scanner in = new Scanner(System.in);
+            int water = 400;
+            int milk = 540;
+            int coffeeBeans = 120;
+            int cups = 9;
+            int money = 550;
+            System.out.println("The coffee machine has:");
+            System.out.println(water + " of water");
+            System.out.println(milk + " of milk");
+            System.out.println(coffeeBeans + " of coffee beans");
+            System.out.println(cups + " of disposable cups");
+            System.out.println(money + " of money");
+            System.out.println();
+            System.out.println("Write action (buy, fill, take):");
+            String command = in.nextLine();
+            switch (command) {
+                case "buy":
+                    System.out.println("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino:");
+                    int drinkType = in.nextInt();
+                    switch (drinkType) {
+                        case 1:
+                            System.out.println("The coffee machine has:");
+                            System.out.println(water - 250 + " of water");
+                            System.out.println(milk + " of milk");
+                            System.out.println(coffeeBeans - 16 + " of coffee beans");
+                            System.out.println(--cups + " of disposable cups");
+                            System.out.println(money + 4 + " of money");
+                            break;
+                        case 2:
+                            System.out.println("The coffee machine has:");
+                            System.out.println(water - 350 + " of water");
+                            System.out.println(milk - 75 + " of milk");
+                            System.out.println(coffeeBeans - 20 + " of coffee beans");
+                            System.out.println(--cups + " of disposable cups");
+                            System.out.println(money + 7 + " of money");
+                            break;
+                        case 3:
+                            System.out.println("The coffee machine has:");
+                            System.out.println(water - 200 + " of water");
+                            System.out.println(milk - 100 + " of milk");
+                            System.out.println(coffeeBeans - 12 + " of coffee beans");
+                            System.out.println(--cups + " of disposable cups");
+                            System.out.println(money + 6 + " of money");
+                            break;
+                        default:
+                            System.out.println("Wrong drink type. Try again");
+                    }
+
+                    break;
+                case "fill":
+                    System.out.println("Write how many ml of water do you want to add: ");
+                    water = water + in.nextInt();
+                    System.out.println("Write how many ml of milk do you want to add: ");
+                    milk = milk + in.nextInt();
+                    System.out.println("Write how many grams of coffee beans do you want to add: ");
+                    coffeeBeans = coffeeBeans + in.nextInt();
+                    System.out.println("Write how many disposable cups of coffee do you want to add: ");
+                    cups = cups + in.nextInt();
+
+                    System.out.println();
+                    System.out.println("The coffee machine has:");
+                    System.out.println(water + " of water");
+                    System.out.println(milk + " of milk");
+                    System.out.println(coffeeBeans + " of coffee beans");
+                    System.out.println(cups + " of disposable cups");
+                    System.out.println(money + " of money");
+
+                    break;
+                case "take":
+                    System.out.println("I gave you $" + money);
+                    System.out.println();
+                    System.out.println("The coffee machine has:");
+                    System.out.println(water + " of water");
+                    System.out.println(milk + " of milk");
+                    System.out.println(coffeeBeans + " of coffee beans");
+                    System.out.println(cups + " of disposable cups");
+                    System.out.println(0 + " of money");
+                    break;
+                default:
+                    System.out.println("Bad command. Try again");
+                    break;
+            }
+
+
+        }
+    }
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/33/stages/179/implement
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/33/stages/179/implement">JetBrains
+    Academy</a>
+  time: Thu, 27 Aug 2020 09:54:53 UTC
+record: 5
